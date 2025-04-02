@@ -40,12 +40,12 @@ const Hero = () => {
           >
             Get Started <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <Button
+          {/* <Button
             variant="outline"
             className="border-zenfra-200/30 hover:border-zenfra-200/60 text-white px-8 py-6 text-lg h-auto"
           >
             Book a Demo
-          </Button>
+          </Button> */}
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">

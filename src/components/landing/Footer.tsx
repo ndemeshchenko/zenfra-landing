@@ -1,4 +1,3 @@
-
 import { Github } from "lucide-react";
 
 const Footer = () => {
@@ -35,7 +34,8 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Product</h4>
             <ul className="space-y-2">
-              {["Features", "Security", "Pricing", "Roadmap", "Changelog"].map((item, i) => (
+              {/* {["Features", "Security", "Pricing", "Roadmap", "Changelog"].map((item, i) => ( */}
+              {["Features", "Security"].map((item, i) => (
                 <li key={i}>
                   <a href="#" className="text-gray-400 hover:text-white transition-colors">{item}</a>
                 </li>
@@ -46,7 +46,8 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
-              {["Documentation", "API Reference", "Community", "Blog", "Support"].map((item, i) => (
+              {/* {["Documentation", "API Reference", "Community", "Blog", "Support"].map((item, i) => ( */}
+              {["Documentation", "API Reference", "Support"].map((item, i) => (
                 <li key={i}>
                   <a href="#" className="text-gray-400 hover:text-white transition-colors">{item}</a>
                 </li>
@@ -57,9 +58,15 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
-              {["About", "Careers", "Contact", "Privacy", "Terms"].map((item, i) => (
+              {/* {["About", "Careers", "Contact", "Privacy", "Terms"].map((item, i) => ( */}
+              {[
+                { name: "About", href: "#" },
+                { name: "Contact", href: "#" },
+                { name: "Privacy", href: "/privacy" },
+                { name: "Terms", href: "/terms" },
+              ].map((item, i) => (
                 <li key={i}>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">{item}</a>
+                  <a href={item.href} className="text-gray-400 hover:text-white transition-colors">{item.name}</a>
                 </li>
               ))}
             </ul>
@@ -71,8 +78,8 @@ const Footer = () => {
             © {new Date().getFullYear()} Zenfra. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Privacy Policy</a>
-            <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Terms of Service</a>
+            <a href="/privacy" className="text-gray-500 hover:text-gray-300 text-sm">Privacy Policy</a>
+            <a href="/terms" className="text-gray-500 hover:text-gray-300 text-sm">Terms of Service</a>
             <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Cookie Policy</a>
           </div>
         </div>

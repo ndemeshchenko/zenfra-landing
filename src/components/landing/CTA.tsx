@@ -33,12 +33,12 @@ const CTA = () => {
           >
             Start Free Trial <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <Button
+          {/* <Button
             variant="outline"
             className="border-zenfra-200/30 hover:border-zenfra-200/60 text-white px-8 py-6 text-lg h-auto"
           >
             Schedule a Demo
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>

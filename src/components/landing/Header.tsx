@@ -13,7 +13,7 @@ const Header = () => {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#" className="flex items-center">
               <div className="w-8 h-8 bg-zenfra-200 rounded-md mr-3"></div>
-              <span className="text-xl font-bold text-white">Zenfra</span>
+              <span className="text-[33px] font-bold text-white">zenfra</span>
             </a>
           </div>
           
@@ -32,9 +32,9 @@ const Header = () => {
             <a href="#features" className="text-base font-medium text-gray-300 hover:text-white transition-colors">
               Features
             </a>
-            <a href="#" className="text-base font-medium text-gray-300 hover:text-white transition-colors">
+            {/* <a href="#" className="text-base font-medium text-gray-300 hover:text-white transition-colors">
               Pricing
-            </a>
+            </a> */}
             <a href="#" className="text-base font-medium text-gray-300 hover:text-white transition-colors">
               Documentation
             </a>
@@ -48,7 +48,7 @@ const Header = () => {
               Sign in
             </a>
             <Button className="bg-zenfra-200 hover:bg-zenfra-300 text-white">
-              Start Free
+              Request Early Access
             </Button>
           </div>
         </div>
@@ -63,7 +63,7 @@ const Header = () => {
             <div className="flex items-center justify-between mb-8">
               <div className="flex items-center">
                 <div className="w-8 h-8 bg-zenfra-200 rounded-md mr-3"></div>
-                <span className="text-xl font-bold text-white">Zenfra</span>
+                <span className="text-[33px] font-bold text-white">zenfra</span>
               </div>
               <Button 
                 variant="ghost" 

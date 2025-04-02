@@ -32,13 +32,27 @@
   }
   
   body {
-    @apply bg-zenfra-darkest text-foreground antialiased font-sans;
+    @apply text-foreground antialiased font-sans; /* Removed bg-zenfra-darkest here */
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
-    background-image: 
-      radial-gradient(circle, rgba(139, 92, 246, 0.08) 1px, transparent 1px),
-      radial-gradient(circle, rgba(139, 92, 246, 0.08) 1px, transparent 1px);
-    background-size: 38px 38px;
-    background-position: 0 0, 19px 19px;
+    background-color: hsl(var(--background)); /* Explicitly set base background color */
+    background-image:
+      /* Vertical lines */
+      linear-gradient(90deg, rgba(139, 92, 246, 0.15) 1px, transparent 1px), /* Increased opacity */
+      /* Horizontal lines */
+      linear-gradient(rgba(139, 92, 246, 0.15) 1px, transparent 1px), /* Increased opacity */
+      /* Dots */
+      radial-gradient(circle, rgba(139, 92, 246, 0.2) 1px, transparent 1px), /* Increased opacity */
+      radial-gradient(circle, rgba(139, 92, 246, 0.2) 1px, transparent 1px); /* Increased opacity */
+    background-size:
+      38px 38px, /* Vertical lines */
+      38px 38px, /* Horizontal lines */
+      38px 38px, /* Dots 1 */
+      38px 38px; /* Dots 2 */
+    background-position:
+      0 0, /* Vertical lines */
+      0 0, /* Horizontal lines */
+      0 0, /* Dots 1 */
+      19px 19px; /* Dots 2 */
   }
 
   html {
