@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -44,7 +43,7 @@ const Header = () => {
           </nav>
           
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="#" className="whitespace-nowrap text-base font-medium text-gray-300 hover:text-white transition-colors mr-8">
+            <a href="https://cp.zenfra.cloud" className="whitespace-nowrap text-base font-medium text-gray-300 hover:text-white transition-colors mr-8">
               Sign in
             </a>
             <Button className="bg-zenfra-200 hover:bg-zenfra-300 text-white">
@@ -92,7 +91,7 @@ const Header = () => {
               </div>
               
               <div className="pt-6 border-t border-white/5">
-                <a href="#" className="block w-full text-center px-4 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-gray-200 bg-zenfra-dark hover:bg-white/5 mb-4" onClick={() => setIsOpen(false)}>
+                <a href="https://cp.zenfra.cloud" className="block w-full text-center px-4 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-gray-200 bg-zenfra-dark hover:bg-white/5 mb-4" onClick={() => setIsOpen(false)}>
                   Sign in
                 </a>
                 <Button className="w-full bg-zenfra-200 hover:bg-zenfra-300 text-white py-6 h-auto" onClick={() => setIsOpen(false)}>

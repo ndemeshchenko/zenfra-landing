@@ -1,73 +1,47 @@
-# Welcome to your Lovable project
+# Zenfra Landing page
 
-## Project info
 
-**URL**: https://lovable.dev/projects/2fa73cb4-6211-4b42-8f5a-756f87054b5f
+## Getting Started Locally
 
-## How can I edit this code?
+To run this project on your local machine, follow these steps:
 
-There are several ways of editing your application.
+1.  **Prerequisites:** Ensure you have [Node.js](https://nodejs.org/) and npm installed. Using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) is recommended.
 
-**Use Lovable**
+2.  **Clone the repository:**
+    ```sh
+    # Replace <YOUR_GIT_URL> with the actual Git URL
+    git clone <YOUR_GIT_URL> 
+    # Replace <YOUR_PROJECT_DIRECTORY> with the directory name
+    cd <YOUR_PROJECT_DIRECTORY> 
+    ```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2fa73cb4-6211-4b42-8f5a-756f87054b5f) and start prompting.
+3.  **Install dependencies:**
+    ```sh
+    npm install
+    ```
+    *Note: If you prefer using bun (a `bun.lockb` file exists), you can use `bun install`.*
 
-Changes made via Lovable will be committed automatically to this repo.
+4.  **Start the development server:**
+    ```sh
+    npm run dev
+    ```
+    *Note: If you prefer using bun, you can use `bun dev`.*
 
-**Use your preferred IDE**
+    This will start the Vite development server, usually available at `http://localhost:5173` (the port might vary). The application will automatically reload when you make changes to the code.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Available Scripts
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+In the project directory, you can run:
 
-Follow these steps:
+*   `npm run dev`: Starts the development server.
+*   `npm run build`: Builds the app for production to the `dist` folder.
+*   `npm run lint`: Lints the codebase using ESLint.
+*   `npm run preview`: Serves the production build locally.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Technologies Used
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2fa73cb4-6211-4b42-8f5a-756f87054b5f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*   [Vite](https://vitejs.dev/)
+*   [TypeScript](https://www.typescriptlang.org/)
+*   [React](https://reactjs.org/)
+*   [shadcn/ui](https://ui.shadcn.com/)
+*   [Tailwind CSS](https://tailwindcss.com/)
