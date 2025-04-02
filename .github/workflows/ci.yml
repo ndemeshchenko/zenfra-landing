@@ -3,14 +3,13 @@ name: CI
 on:
   push:
     branches: [ "main" ]
-  create:
     tags:
       - 'v*.*.*' # Trigger on tags like v1.0.0, v2.3.4
 
 jobs:
   lint-check:
     # Only run lint-check on pushes to main, not on tag creation
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' && !startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,10 +31,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    needs: lint-check # Optional: make build depend on lint-check passing if they run concurrently
-                     # Note: lint-check only runs on push, so this dependency might not
-                     # behave as expected unless workflow triggers are adjusted.
-                     # Removing dependency for now for clarity on separate triggers.
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js
