@@ -25,7 +25,7 @@ The Terms govern the use of:
 
 1.6. “Metrics” - means the measurements used for quantifying the Services usage with the following meaning:
 
-    ​1.6.1. “Private Minute(s)” means minute(s) of Private Workers' Services usage in a given month;
+    1.6.1. “Private Minute(s)” means minute(s) of Private Workers' Services usage in a given month;
 
     1.6.2. “Public Minutes” means minutes of Public Worker's Services usage in a given month;
 
@@ -44,7 +44,7 @@ The Terms govern the use of:
 1.11. “Website means https://zenfra.io website managed by Zenfra.
 2. GENERAL»
 
-2.1. Execution of the Terms. Accepting these Terms is a condition of using the Services provided by Zenfra. ​​BY COMPLETING THE REGISTRATION PROCESS, ACCESSING OR USING THE SERVICES, YOU ACKNOWLEDGE AND AGREE THAT (I) YOU HAVE READ, UNDERSTOOD, AND ACCEPTED THESE TERMS, AND (II) YOU HEREBY REPRESENT AND WARRANT THAT YOU ARE AUTHORIZED TO ENTER OR ACT ON BEHALF OF CUSTOMER, AND BIND TO THESE TERMS. If you do not have the legal authority to enter these Terms, do not understand these Terms or do not agree to these Terms, you should not accept the Terms, or use the Services.
+2.1. Execution of the Terms. Accepting these Terms is a condition of using the Services provided by Zenfra. BY COMPLETING THE REGISTRATION PROCESS, ACCESSING OR USING THE SERVICES, YOU ACKNOWLEDGE AND AGREE THAT (I) YOU HAVE READ, UNDERSTOOD, AND ACCEPTED THESE TERMS, AND (II) YOU HEREBY REPRESENT AND WARRANT THAT YOU ARE AUTHORIZED TO ENTER OR ACT ON BEHALF OF CUSTOMER, AND BIND TO THESE TERMS. If you do not have the legal authority to enter these Terms, do not understand these Terms or do not agree to these Terms, you should not accept the Terms, or use the Services.
 
 2.2. Conflict of Provisions. In the event of any inconsistencies or conflict between the documents incorporated into these Terms, the documents will prevail in the following order: (a) any written amendment agreed upon by the parties (such as order forms); (b) Data Processing Agreement and Privacy Policy; (c) these Terms and (d) the Refund Policy.
 
