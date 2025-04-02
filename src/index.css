@@ -34,6 +34,11 @@
   body {
     @apply bg-zenfra-darkest text-foreground antialiased font-sans;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+    background-image: 
+      radial-gradient(circle, rgba(139, 92, 246, 0.08) 1px, transparent 1px),
+      radial-gradient(circle, rgba(139, 92, 246, 0.08) 1px, transparent 1px);
+    background-size: 38px 38px;
+    background-position: 0 0, 19px 19px;
   }
 
   html {
