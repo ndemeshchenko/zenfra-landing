@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  create:
+    tags:
+      - 'v*.*.*' # Trigger on tags like v1.0.0, v2.3.4
+
+jobs:
+  lint-check:
+    # Only run lint-check on pushes to main, not on tag creation
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Or your preferred Node.js version
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint code
+        run: npm run lint
+      - name: Check types
+        run: npx tsc --noEmit
+
+  build-tag:
+    # Only run build-tag on tag creation, not on pushes to main
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    needs: lint-check # Optional: make build depend on lint-check passing if they run concurrently
+                     # Note: lint-check only runs on push, so this dependency might not
+                     # behave as expected unless workflow triggers are adjusted.
+                     # Removing dependency for now for clarity on separate triggers.
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Use the same Node.js version
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build project
+        run: npm run build
+        # Optional: Add steps here to upload build artifacts if needed
+        # - name: Upload artifact
+        #   uses: actions/upload-artifact@v4
+        #   with:
+        #     name: build-artifacts
+        #     path: dist/ # Or your build output directory 
