@@ -21,7 +21,7 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Space Grotesk', 'Inter', 'sans-serif'],
-				mono: ['Fira Code', 'monospace'],
+				mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
 				display: ['Space Grotesk', 'Inter', 'sans-serif'],
 			},
 			colors: {
@@ -102,10 +102,10 @@ export default {
 				},
 				'pulse-slow': {
 					'0%, 100%': {
-						opacity: 1
+						opacity: '1'
 					},
 					'50%': {
-						opacity: 0.8
+						opacity: '0.8'
 					}
 				},
 				'float': {

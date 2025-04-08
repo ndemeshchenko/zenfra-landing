@@ -11,8 +11,8 @@ const Header = () => {
         <div className="flex justify-between items-center py-4 md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#" className="flex items-center">
-              <div className="w-8 h-8 bg-zenfra-200 rounded-md mr-3"></div>
-              <span className="text-[33px] font-bold text-white">zenfra</span>
+              <img src="/zenfra_logo_60x60_purple.png" alt="Zenfra Logo" className="w-[45px] h-[45px] rounded-md mr-3" />
+              <span className="text-[33px] text-white font-mono font-medium">zenfra</span>
             </a>
           </div>
           
@@ -61,8 +61,8 @@ const Header = () => {
           <div className="w-screen max-w-md bg-zenfra-dark p-6 flex flex-col">
             <div className="flex items-center justify-between mb-8">
               <div className="flex items-center">
-                <div className="w-8 h-8 bg-zenfra-200 rounded-md mr-3"></div>
-                <span className="text-[33px] font-bold text-white">zenfra</span>
+                <img src="/zenfra_logo_60x60_purple.png" alt="Zenfra Logo" className="w-[60px] h-[60px] rounded-md mr-3" />
+                <span className="text-[33px] text-white font-mono font-medium">zenfra</span>
               </div>
               <Button 
                 variant="ghost" 

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-zenfra-200 rounded-md mr-3"></div>
+              <img src="/zenfra_logo_60x60_purple.png" alt="Zenfra Logo" className="w-8 h-8 rounded-md mr-3" />
               <h3 className="text-xl font-bold text-white">Zenfra</h3>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
