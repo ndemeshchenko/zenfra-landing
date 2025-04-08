@@ -48,7 +48,7 @@ const Header = () => {
               <a href="https://cp.zenfra.cloud" className="whitespace-nowrap text-base font-medium text-gray-300 hover:text-white transition-colors mr-8">
                 Sign in
               </a>
-              <Button className="bg-zenfra-200 hover:bg-zenfra-300 text-white">
+              <Button className="bg-zenfra-300 hover:bg-zenfra-200 text-white">
                 Request Early Access
               </Button>
             </div>
@@ -97,7 +97,7 @@ const Header = () => {
                 <a href="https://cp.zenfra.cloud" className="block w-full text-center px-4 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-gray-200 bg-zenfra-dark hover:bg-white/5 mb-4" onClick={() => setIsOpen(false)}>
                   Sign in
                 </a>
-                <Button className="w-full bg-zenfra-200 hover:bg-zenfra-300 text-white py-6 h-auto" onClick={() => setIsOpen(false)}>
+                <Button className="w-full bg-zenfra-300 hover:bg-zenfra-200 text-white py-6 h-auto" onClick={() => setIsOpen(false)}>
                   Start Free
                 </Button>
               </div>

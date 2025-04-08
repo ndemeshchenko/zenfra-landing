@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 
 const Dashboard = () => {
@@ -33,7 +32,7 @@ const Dashboard = () => {
             <div className="p-6 bg-zenfra-darkest/50">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 <div className="bg-zenfra-dark border border-white/5 rounded-lg p-4">
-                  <h4 className="text-sm font-medium text-gray-400 mb-2">Infrastructure Health</h4>
+                  <h3 className="text-sm font-medium text-gray-400 mb-2">Infrastructure Health</h3>
                   <div className="flex items-end">
                     <span className="text-3xl font-bold text-white">98.7%</span>
                     <span className="ml-2 text-xs text-green-400">+0.3%</span>

@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -29,7 +28,7 @@ const CTA = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
-            className="bg-zenfra-200 hover:bg-zenfra-300 text-white px-8 py-6 text-lg h-auto"
+            className="bg-zenfra-300 hover:bg-zenfra-200 text-white px-8 py-6 text-lg h-auto"
           >
             Start Free Trial <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
